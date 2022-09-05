@@ -1,0 +1,47 @@
+/* replace name - mod by killingdyl */
+
+.anime .header a[class=username]::after {
+	content: ' - Anime List';
+	text-shadow: initial;
+	font-size: 18pt;
+	font-weight: bold;
+}
+
+.anime .header span[class=username] {
+	font-size: 0pt;
+}
+
+.anime .header span[class=username]::before {
+	content: 'Your Name Here';
+	font-size: 36pt;
+}
+
+.anime .header span[class=username]::after {
+	content: ' - Anime List';
+	text-shadow: initial;
+	font-size: 18pt;
+	font-weight: bold;
+}
+
+.manga .header a[class=username]::after {
+	content: ' - Manga List';
+	text-shadow: initial;
+	font-size: 18pt;
+	font-weight: bold;
+}
+
+.manga .header span[class=username] {
+	font-size: 0pt;
+}
+
+.manga .header span[class=username]::before {
+	content: 'Your Name Here';
+	font-size: 36pt;
+}
+
+.manga .header span[class=username]::after {
+	content: ' - Manga List';
+	text-shadow: initial;
+	font-size: 18pt;
+	font-weight: bold;
+}
