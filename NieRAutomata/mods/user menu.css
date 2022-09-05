@@ -1,0 +1,127 @@
+/* re-add user menu - mod by Valerio Lyndon */
+
+.list-menu-float {
+	top: 130px;
+	left: calc(50% + 50px + 125px);
+	right: 25px;
+	z-index: 4;
+	
+	display: flex;
+	width: auto;
+	height: 40px;
+	border: none;
+	justify-content: flex-end;
+}
+
+.list-menu-float .icon-menu {
+	width: 0;
+	height: 40px;
+	background: linear-gradient(to right, #b3ac98, #aea993);
+	padding-left: 40px;
+	border-radius: 3px 3px 3px 3px;
+	box-shadow: 0px 0px 6px #aea993;
+	margin-left: 3%;
+	flex: 0 0 auto;
+	
+	color: #4d4940;
+	line-height: 40px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	white-space: nowrap;
+	
+	transition: none;
+} .list-menu-float .icon-menu:not(.profile):hover {
+	width: auto;
+	background: #5f5a4a;
+	box-shadow: 0px 0px 6px #5f5a4a;
+	color: #d1cbb3;
+	transition-property: background, box-shadow, color;
+	transition-duration: .2s;
+	transition-timing-function: ease;
+}
+
+.list-menu-float form {
+	margin-left: 3%;
+}
+
+.list-menu-float .icon-menu.logout {
+	margin-left: 0;
+} 
+
+.list-menu-float .icon-menu svg.icon {
+	margin-top: -3px;
+	margin-left: -3px;
+	fill: currentColor;
+	transition: fill .2s ease;
+}
+
+.list-menu-float .icon-menu .text {
+	display: none;
+} .list-menu-float .icon-menu:hover .text {
+	width: auto;
+}
+
+.list-menu-float .icon-menu.setting:hover {
+	height: 46px;
+	border-radius: 3px 3px 0 0;
+}
+
+.ownlist .list-menu-float .icon-menu.setting .text {
+	position: absolute;
+	top: 46px;
+	left: auto;
+	right: 0;
+	
+	display: flex;
+	flex-flow: column nowrap;
+	width: auto;
+	height: auto;
+	background: linear-gradient(to right, #b3ac98, #aea993);
+	border-radius: 3px 0 3px 3px;
+	box-shadow: 0px 0px 6px #5f5a4a;
+	
+	transition: inherit;
+}
+
+.ownlist .list-menu-float .icon-menu.setting .text a,
+.ownlist .list-menu-float .icon-menu.setting:hover .text a {
+	position: static;
+	
+	width: 80px;
+	height: 30px;
+	background: none;
+	border: none;
+	
+	color: #4d4940;
+	font-size: 0;
+	line-height: 30px;
+	
+	transition: none;
+} .ownlist .list-menu-float .icon-menu.setting:hover .text a:hover {
+	background: #5f5a4a;
+	color: #d1cbb3;
+	transition: all 0.2s ease;
+}
+
+.list-menu-float .icon-menu.setting .text .link-list-setting:before {
+	display: block;
+	content: "List";
+	font-size: 14px;
+} .list-menu-float .icon-menu.setting .text .link-style-setting:before {
+	display: block;
+	content: "Style";
+	font-size: 14px;
+}
+
+.list-menu-float .icon-menu.profile {
+	flex: 0 0 auto;
+	box-shadow: inset 0 0 0 2px #aea993;
+} .list-menu-float .icon-menu.profile:hover {
+	opacity: 0.7;
+	box-shadow: inset 0 0 0 2px #5f5a4a;
+	transition: all .2s ease;
+}
+
+.list-menu-float .icon-menu.logout .text {
+	width: 100%;
+}
