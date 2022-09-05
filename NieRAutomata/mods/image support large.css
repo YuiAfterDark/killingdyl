@@ -1,0 +1,38 @@
+/* better image support (large) - mod by Valerio Lyndon */
+
+.list-table tbody.list-item {
+	background-image: none;
+}
+
+.list-table-data {
+	height: auto;
+	background: linear-gradient(
+		to bottom,
+		transparent 2px,
+		#d7d1b9 2px,
+		#d7d1b9 5px,
+		transparent 5px,
+		transparent calc(100% - 5px),
+		#d7d1b9 calc(100% - 5px),
+		#d7d1b9 calc(100% - 2px),
+		transparent calc(100% - 2px),
+		transparent 100%,
+		#d7d1b9 100%
+	);
+	transition: inherit;
+}
+
+.list-table .list-table-header .header-title.status {
+	width: 3px;
+}
+
+.list-table .list-table-data .data.status {
+	display: table-cell;
+	padding: 5px 0;
+	background-clip: content-box;
+}
+
+.list-table .list-table-data .data.image .image {
+	border: none;
+	margin: 5px 0;
+}

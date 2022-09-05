@@ -1,0 +1,11 @@
+/* better image support (small) - mod by Valerio Lyndon */
+
+.list-table .list-table-header .header-title.image {
+	width: auto;
+}
+
+.list-table .list-table-data .data.image .image {
+	width: auto;
+	height: 40px;
+	border: none;
+}
